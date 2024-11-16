@@ -68,6 +68,9 @@ df_filtered = df[
 st.header('Proveedores Activos Filtrados')
 st.write(df_filtered)
 
+st.header('Contacto del Proveedor')
+st.write(df_filtered["TEL-COM-1"])
+
 # Visualización: Gráfico de barras de la distribución de TAM-EMPRESA
 fig_tam_empresa = px.bar(df_filtered,   
                          x='ORGANIZACION', 
